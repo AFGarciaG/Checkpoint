@@ -1,0 +1,315 @@
+:root {
+  --primary-color: #d1d1d1;
+  --secondary-color: #4caf50;
+  --title-color: #ccc;
+  --black: black;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-color);
+}
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #000;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #000;
+}
+
+h4 {
+  font-size: 20px;
+  color: #000;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #000;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 h2,
+.section-p2  h2,
+.section-p3  h2{
+    padding-top: 7px;
+    color: #494646;
+    font-size: 24px;
+    height: 50%;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+
+/*  ============================= Header Start ========================== */
+
+#header {
+  padding: 0 80px;
+  background-image: url("img/redes-neuronales.png");
+  z-index: 999;
+  position: sticky;
+  width: 100%;
+  padding: 20px;
+}
+
+#header h1{
+    color: var(--title-color);
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#navbar {
+  width: 100%;
+}
+
+#navbar-ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+
+#navbar ul li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3 all ease;
+}
+
+/*  ============================= Header End========================== */
+
+
+/*  ============================= Section 1 Start ========================== */
+
+
+
+/*  ============================= Section 1 End ========================== */
+
+.section-p1{
+    padding: 0 40px;
+}
+
+.section-p1 article p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #494646;
+    
+}
+
+
+/*  ============================= Section 2 Start ========================== */
+
+
+.section-p2 {
+    text-align: center;
+  }
+  
+.section-p2 .section-p2-item {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+.section-p2 .item {
+    width: 23%;
+    height: 300px;
+    min-width: 250px;
+    border: 0.5px solid #6c6b6b41;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(104, 102, 102, 0.878);
+    transition: 0.2s ease;
+    position: relative;
+  }
+  
+.section-p2 .item:hover {
+    box-shadow: 1px 1px 10px rgba(104, 102, 102, 0.878);
+
+  }
+.section-p2 .item img {
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: 50%;
+  }
+
+.section-p2 .item button{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.section-p2 .item h5 
+{
+    color: #494646;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: start;
+    padding: 0 8px;
+}
+
+
+
+/*  ============================= Section 2 End ========================== */
+
+/*  ============================= Section 3 Start ========================== */
+
+
+.section-p3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .section-p3 .list{
+    margin-bottom: 30px;
+  }
+  
+  .section-p3 .products{
+    font-size: 18px;
+    color: #494646;
+  }
+
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+td{
+    text-shadow: var(--shadow-black);
+}
+
+/*  ============================= Section 3 End ========================== */
+
+/*  ============================= Footer Start ========================== */
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 998;
+    width: 100%;
+    margin-top: 50px;
+    color: #fff;
+    padding: 20px 15px;
+  }
+  footer input{
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    border-radius: 5px; border: 1px solid #fff;
+  }
+  footer button{
+    color: var(--black);
+    margin: 0;
+  }
+
+  footer fieldset{
+    padding: 7px 0;
+  }
+
+  footer p{
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  footer a{
+    color: var(--primary-color);
+  }
+
+
+/*  ============================= Footer End ========================== */
+
+
+
+
+@media (max-width: 477px) {
+    .section-p1 {
+      padding: 20px;
+    }
+    #header {
+      padding: 10px;
+    }
+    
+      #navbar-ul {
+        padding: 0;
+    }
+    
+
+    h2 {
+      font-size: 32px;
+    }
+    h1 {
+      font-size: 38px;
+    }
+      
+    .section-p2 .section-p2-item {
+        display: flex;
+        padding: 20px;
+      }
+      
+    .section-p2 .item {
+        width: 100%;
+        height: 300px;
+        min-width: 250px;
+        border: 0.5px solid #6c6b6b41;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px rgba(104, 102, 102, 0.878);
+        transition: 0.2s ease;
+        position: relative;
+        margin: 20px;
+      }
+
+      footer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      footer input{
+        padding: 8px ;
+        color: #000;
+      }
+
+}
+  
